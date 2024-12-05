@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import Calendar from "./Calendar";
 
 const Hero = () => {
   return (
@@ -17,6 +18,7 @@ const Hero = () => {
         <Button text="Sign Up" />
         <Button text="Login" dark />
       </div>
+      <Calendar />
     </div>
   );
 };
