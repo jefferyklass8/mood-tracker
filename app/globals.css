@@ -25,3 +25,12 @@ body {
   font-family: var(--font-geist-sans), sans-serif;
   transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
+
+.purpleShadow {
+  box-shadow: 3px 3px 1px 1px lavender;
+}
+
+.purpleShadow:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 1px 1px lavender;
+}
