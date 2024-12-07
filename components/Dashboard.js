@@ -5,11 +5,11 @@ import Calendar from "./Calendar";
 
 export default function Dashboard() {
   const moods = {
-    Joyful: "😄",
-    Calm: "🙂",
-    Neutral: "😐",
-    Anxious: "😟",
     Sad: "😢",
+    Anxious: "😟",
+    Neutral: "😐",
+    Calm: "🙂",
+    Joyful: "😄",
   };
 
   const statuses = {
@@ -46,8 +46,8 @@ export default function Dashboard() {
               className="flex flex-col items-center flex-1 gap-2 p-4 px-5 text-center duration-200 rounded-2xl purpleShadow bg-indigo-50 hover:bg-indigo-100"
               key={moodIndex}
             >
-              <p className="text-4xl sm:text-5xl md:text-6xl">{moods[mood]}</p>
-              <p className="font-mono text-xs text-indigo-500 sm:text-sm md:text-base">
+              <p className="text-xl sm:text-2xl md:text-3xl">{moods[mood]}</p>
+              <p className="font-mono text-xs font-semibold text-indigo-500 sm:text-sm md:text-base">
                 {mood}
               </p>
             </button>
