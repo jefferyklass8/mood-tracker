@@ -114,7 +114,12 @@ export default function Calendar(props) {
                 let isToday = dayIndex === now.getDate();
 
                 if (!dayDisplay) {
-                  return <div className="bg-white" key={dayOfWeekIndex} />;
+                  return (
+                    <div
+                      className="bg-[var(--background)]"
+                      key={dayOfWeekIndex}
+                    />
+                  );
                 }
 
                 let color = demo

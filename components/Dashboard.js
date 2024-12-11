@@ -54,7 +54,7 @@ export default function Dashboard() {
           );
         })}
       </div>
-      <Calendar />
+      <Calendar demo />
     </div>
   );
 }
