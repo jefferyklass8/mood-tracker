@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
 import Logout from "@/components/Logout";
+import { AuthProvider } from "@/context/AuthContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -50,13 +51,15 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-full max-w-[1000px] mx-auto text-sm sm:text-base min-h-screen flex flex-col`}
-      >
-        {header}
-        {children}
-        {footer}
-      </body>
+      <AuthProvider>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased w-full max-w-[1000px] mx-auto text-sm sm:text-base min-h-screen flex flex-col`}
+        >
+          {header}
+          {children}
+          {footer}
+        </body>
+      </AuthProvider>
     </html>
   );
 }
