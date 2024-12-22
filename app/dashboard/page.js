@@ -1,5 +1,4 @@
 import Dashboard from "@/components/Dashboard";
-import Login from "@/components/Login";
 import Main from "@/components/Main";
 
 export const metadata = {
@@ -10,7 +9,6 @@ export default function DashboardPage() {
   return (
     <Main>
       <Dashboard />
-      {/* <Login /> */}
     </Main>
   );
 }
