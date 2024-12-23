@@ -66,7 +66,9 @@ export default function Login() {
         />
       </div>
       <p className="text-center">
-        {isRegister ? "Already have an account? " : "Don't have an account? "}
+        {isRegister
+          ? "Already have an account? "
+          : "Don&apos;t have an account? "}
         <button
           onClick={() => setIsRegister(!isRegister)}
           className="text-indigo-600"
