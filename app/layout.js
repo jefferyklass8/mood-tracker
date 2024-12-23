@@ -25,8 +25,8 @@ export default function RootLayout({ children }) {
   const header = (
     <header className="flex items-center justify-between gap-4 p-4 sm:p-8">
       <Link href={"/"} aria-label="Home Page">
-        <h1 className="font-sans text-base text-indigo-500 sm:text-lg">
-          Mood Mapper
+        <h1 className="font-sans font-semibold text-xl text-indigo-500 sm:text-3xl">
+          Mood➡️Mapper
         </h1>
       </Link>
       <Logout />

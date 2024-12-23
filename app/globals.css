@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #fafafa;
-  --foreground: #171717;
+  --background: #f5f5f5; /* Light Gray (off-white) for a soft background */
+  --foreground: #333333; /* Dark Gray for text (less harsh than pure black) */
 
   /* Font Variables */
   --font-geist-sans: "Geist Sans", sans-serif;

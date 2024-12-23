@@ -98,7 +98,7 @@ export default function Dashboard() {
 
   return (
     <div className="flex flex-col flex-1 gap-8 sm:gap-12 md:gap-16">
-      <div className="grid grid-cols-3 gap-4 p-4 text-indigo-500 rounded-lg bg-indigo-50 justify-items-center">
+      <div className="grid grid-cols-3 gap-4 p-4 text-indigo-500 rounded-lg bg-transparent justify-items-center border-2 border-solid border-violet-500 dark:border-violet-500">
         {Object.keys(statuses).map((status, statusIndex) => {
           return (
             <div key={statusIndex} className="flex flex-col gap-1 sm:gap-2">
@@ -124,7 +124,7 @@ export default function Dashboard() {
                 const currentMoodValue = moodIndex + 1;
                 handleSetMood(currentMoodValue);
               }}
-              className="flex flex-col items-center flex-1 gap-2 p-4 px-5 text-center duration-200 rounded-2xl purpleShadow bg-indigo-50 hover:bg-indigo-100"
+              className="flex flex-col items-center flex-1 gap-2 p-4 px-5 text-center duration-200 rounded-2xl purpleShadow bg-transparent hover:bg-fuchsia-300 border-2 border-solid border-violet-500 dark:border-violet-500"
               key={moodIndex}
             >
               <p className="text-xl sm:text-2xl md:text-3xl">{moods[mood]}</p>
