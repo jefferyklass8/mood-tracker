@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
 import Calendar from "./Calendar";
+import CallToAction from "./CallToAction";
 
 const Hero = () => {
   return (
@@ -14,11 +14,8 @@ const Hero = () => {
         Create a personalized mood record and visualize your emotional journey{" "}
         <span className="font-semibold">throughout the year.</span>
       </p>
-      <div className="grid grid-cols-2 gap-4 mx-auto w-fit">
-        <Button text="Sign Up" />
-        <Button text="Login" dark />
-      </div>
-      <Calendar demo/>
+      <CallToAction />
+      <Calendar demo />
     </div>
   );
 };
