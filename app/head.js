@@ -1,9 +1,9 @@
-import React from "react";
+import Head from "next/head";
 
-export default function Head() {
+export default function MyPage() {
   return (
-    <head>
-      <link rel="icon" href="favicon.ico" sizes="any" />
+    <Head>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -11,6 +11,6 @@ export default function Head() {
         crossOrigin="anonymous"
         referrerPolicy="no-referrer"
       />
-    </head>
+    </Head>
   );
 }
