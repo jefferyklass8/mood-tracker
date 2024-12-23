@@ -98,7 +98,7 @@ export default function Dashboard() {
 
   return (
     <div className="flex flex-col flex-1 gap-8 sm:gap-12 md:gap-16">
-      <div className="grid grid-cols-3 gap-4 p-4 text-indigo-500 rounded-lg bg-indigo-50">
+      <div className="grid grid-cols-3 gap-4 p-4 text-indigo-500 rounded-lg bg-indigo-50 justify-items-center">
         {Object.keys(statuses).map((status, statusIndex) => {
           return (
             <div key={statusIndex} className="flex flex-col gap-1 sm:gap-2">
@@ -113,8 +113,8 @@ export default function Dashboard() {
           );
         })}
       </div>
-      <h4 className="text-5xl text-center sm:text-6xl md:text-7xl">
-        How do you <span className="textGradient">feel</span> today?
+      <h4 className="text-6xl font-semibold text-center sm:text-6xl md:text-7xl text-violet-500">
+        How do you <span className="text-fuchsia-500">feel</span> today?
       </h4>
       <div className="flex flex-wrap items-stretch gap-4">
         {Object.keys(moods).map((mood, moodIndex) => {
