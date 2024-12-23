@@ -1,3 +1,17 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "react/no-unescaped-entities": "warn",
+    "react/jsx-no-target-blank": "warn",
+    "react/prop-types": "off",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "warn",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "no-debugger": "warn"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
 }
