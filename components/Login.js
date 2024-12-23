@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import Button from "./Button";
 import { useAuth } from "@/context/AuthContext";
@@ -49,13 +47,13 @@ export default function Login() {
       <input
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="w-full max-w-[400px] mx-auto px-3 duration-200 hover:border-indigo-600 focus:border-indigo-600 py-2 sm:py-3 border border-solid border-indigo-400 rounded-full outline-none"
+        className="w-full max-w-[400px] mx-auto px-3 py-2 sm:px-10 sm:py-3 border-2 border-solid border-indigo-600 rounded-full bg-transparent text-indigo-600 placeholder-gray-400 duration-200 hover:opacity-60 focus:outline-none focus:border-indigo-500"
         placeholder="Email"
       />
       <input
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        className="w-full max-w-[400px] mx-auto px-3 duration-200 hover:border-indigo-600 focus:border-indigo-600 py-2 sm:py-3 border border-solid border-indigo-400 rounded-full outline-none"
+        className="w-full max-w-[400px] mx-auto px-3 py-2 sm:px-10 sm:py-3 border-2 border-solid border-indigo-600 rounded-full bg-transparent text-indigo-600 placeholder-gray-400 duration-200 hover:opacity-60 focus:outline-none focus:border-indigo-500"
         placeholder="Password"
         type="password"
       />
