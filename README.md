@@ -2,6 +2,8 @@
 
 A web application to track and analyze your mood throughout the days, built with Next.js and Firebase.
 
+![Demo](https://github.com/solarluiso/mood-tracker/blob/main/public/demo.png)
+
 ## Features
 
 - User authentication (login/register)
