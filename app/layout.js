@@ -36,12 +36,12 @@ export default function RootLayout({ children }) {
   const footer = (
     <footer className="grid p-4 sm:p-8 place-items-center">
       <Link
-        href={"https://solarluiso-portfolio.vercel.app/"}
+        href={"https://jeffery-portfolio-seven.vercel.app/"}
         target="_blank"
-        aria-label="Visit Luiso's Portfolio"
+        aria-label="Visit Jeffery's Portfolio"
       >
         <p className="font-mono text-indigo-500 duration-200 hover:text-white hover:bg-indigo-500">
-          Built with 💚 by Luiso!
+          Built with 💚 by Jeffery!
         </p>
       </Link>
       <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
